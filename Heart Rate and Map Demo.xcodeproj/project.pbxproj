@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		708144AE1F0FDE79004E47FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708144AD1F0FDE79004E47FB /* AppDelegate.swift */; };
+		708144B01F0FDE79004E47FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708144AF1F0FDE79004E47FB /* ViewController.swift */; };
+		708144B31F0FDE79004E47FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 708144B11F0FDE79004E47FB /* Main.storyboard */; };
+		708144B51F0FDE79004E47FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 708144B41F0FDE79004E47FB /* Assets.xcassets */; };
+		708144B81F0FDE79004E47FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 708144B61F0FDE79004E47FB /* LaunchScreen.storyboard */; };
+		708144BD1F0FDE79004E47FB /* Heart Rate and Map Demo WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 708144BC1F0FDE79004E47FB /* Heart Rate and Map Demo WatchKit App.app */; };
+		708144C31F0FDE79004E47FB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 708144C11F0FDE79004E47FB /* Interface.storyboard */; };
+		708144C51F0FDE79004E47FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 708144C41F0FDE79004E47FB /* Assets.xcassets */; };
+		708144CC1F0FDE79004E47FB /* Heart Rate and Map Demo WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 708144CB1F0FDE79004E47FB /* Heart Rate and Map Demo WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		708144D31F0FDE79004E47FB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708144D21F0FDE79004E47FB /* InterfaceController.swift */; };
+		708144D51F0FDE79004E47FB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708144D41F0FDE79004E47FB /* ExtensionDelegate.swift */; };
+		708144D71F0FDE79004E47FB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708144D61F0FDE79004E47FB /* NotificationController.swift */; };
+		708144D91F0FDE79004E47FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 708144D81F0FDE79004E47FB /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		708144BE1F0FDE79004E47FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 708144A21F0FDE78004E47FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 708144BB1F0FDE79004E47FB;
+			remoteInfo = "Heart Rate and Map Demo WatchKit App";
+		};
+		708144CD1F0FDE79004E47FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 708144A21F0FDE78004E47FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 708144CA1F0FDE79004E47FB;
+			remoteInfo = "Heart Rate and Map Demo WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		708144E01F0FDE79004E47FB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				708144CC1F0FDE79004E47FB /* Heart Rate and Map Demo WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		708144E41F0FDE79004E47FB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				708144BD1F0FDE79004E47FB /* Heart Rate and Map Demo WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		708144AA1F0FDE79004E47FB /* Heart Rate and Map Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heart Rate and Map Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		708144AD1F0FDE79004E47FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		708144AF1F0FDE79004E47FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		708144B21F0FDE79004E47FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		708144B41F0FDE79004E47FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		708144B71F0FDE79004E47FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		708144B91F0FDE79004E47FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		708144BC1F0FDE79004E47FB /* Heart Rate and Map Demo WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heart Rate and Map Demo WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		708144C21F0FDE79004E47FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		708144C41F0FDE79004E47FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		708144C61F0FDE79004E47FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		708144CB1F0FDE79004E47FB /* Heart Rate and Map Demo WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Heart Rate and Map Demo WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		708144D11F0FDE79004E47FB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		708144D21F0FDE79004E47FB /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		708144D41F0FDE79004E47FB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		708144D61F0FDE79004E47FB /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		708144D81F0FDE79004E47FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		708144DA1F0FDE79004E47FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		708144A71F0FDE79004E47FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		708144C81F0FDE79004E47FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		708144A11F0FDE78004E47FB = {
+			isa = PBXGroup;
+			children = (
+				708144AC1F0FDE79004E47FB /* Heart Rate and Map Demo */,
+				708144C01F0FDE79004E47FB /* Heart Rate and Map Demo WatchKit App */,
+				708144CF1F0FDE79004E47FB /* Heart Rate and Map Demo WatchKit Extension */,
+				708144AB1F0FDE79004E47FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		708144AB1F0FDE79004E47FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				708144AA1F0FDE79004E47FB /* Heart Rate and Map Demo.app */,
+				708144BC1F0FDE79004E47FB /* Heart Rate and Map Demo WatchKit App.app */,
+				708144CB1F0FDE79004E47FB /* Heart Rate and Map Demo WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		708144AC1F0FDE79004E47FB /* Heart Rate and Map Demo */ = {
+			isa = PBXGroup;
+			children = (
+				708144AD1F0FDE79004E47FB /* AppDelegate.swift */,
+				708144AF1F0FDE79004E47FB /* ViewController.swift */,
+				708144B11F0FDE79004E47FB /* Main.storyboard */,
+				708144B41F0FDE79004E47FB /* Assets.xcassets */,
+				708144B61F0FDE79004E47FB /* LaunchScreen.storyboard */,
+				708144B91F0FDE79004E47FB /* Info.plist */,
+			);
+			path = "Heart Rate and Map Demo";
+			sourceTree = "<group>";
+		};
+		708144C01F0FDE79004E47FB /* Heart Rate and Map Demo WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				708144C11F0FDE79004E47FB /* Interface.storyboard */,
+				708144C41F0FDE79004E47FB /* Assets.xcassets */,
+				708144C61F0FDE79004E47FB /* Info.plist */,
+			);
+			path = "Heart Rate and Map Demo WatchKit App";
+			sourceTree = "<group>";
+		};
+		708144CF1F0FDE79004E47FB /* Heart Rate and Map Demo WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				708144D21F0FDE79004E47FB /* InterfaceController.swift */,
+				708144D41F0FDE79004E47FB /* ExtensionDelegate.swift */,
+				708144D61F0FDE79004E47FB /* NotificationController.swift */,
+				708144D81F0FDE79004E47FB /* Assets.xcassets */,
+				708144DA1F0FDE79004E47FB /* Info.plist */,
+				708144D01F0FDE79004E47FB /* Supporting Files */,
+			);
+			path = "Heart Rate and Map Demo WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		708144D01F0FDE79004E47FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				708144D11F0FDE79004E47FB /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		708144A91F0FDE79004E47FB /* Heart Rate and Map Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 708144E51F0FDE79004E47FB /* Build configuration list for PBXNativeTarget "Heart Rate and Map Demo" */;
+			buildPhases = (
+				708144A61F0FDE79004E47FB /* Sources */,
+				708144A71F0FDE79004E47FB /* Frameworks */,
+				708144A81F0FDE79004E47FB /* Resources */,
+				708144E41F0FDE79004E47FB /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				708144BF1F0FDE79004E47FB /* PBXTargetDependency */,
+			);
+			name = "Heart Rate and Map Demo";
+			productName = "Heart Rate and Map Demo";
+			productReference = 708144AA1F0FDE79004E47FB /* Heart Rate and Map Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		708144BB1F0FDE79004E47FB /* Heart Rate and Map Demo WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 708144E11F0FDE79004E47FB /* Build configuration list for PBXNativeTarget "Heart Rate and Map Demo WatchKit App" */;
+			buildPhases = (
+				708144BA1F0FDE79004E47FB /* Resources */,
+				708144E01F0FDE79004E47FB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				708144CE1F0FDE79004E47FB /* PBXTargetDependency */,
+			);
+			name = "Heart Rate and Map Demo WatchKit App";
+			productName = "Heart Rate and Map Demo WatchKit App";
+			productReference = 708144BC1F0FDE79004E47FB /* Heart Rate and Map Demo WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		708144CA1F0FDE79004E47FB /* Heart Rate and Map Demo WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 708144DD1F0FDE79004E47FB /* Build configuration list for PBXNativeTarget "Heart Rate and Map Demo WatchKit Extension" */;
+			buildPhases = (
+				708144C71F0FDE79004E47FB /* Sources */,
+				708144C81F0FDE79004E47FB /* Frameworks */,
+				708144C91F0FDE79004E47FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Heart Rate and Map Demo WatchKit Extension";
+			productName = "Heart Rate and Map Demo WatchKit Extension";
+			productReference = 708144CB1F0FDE79004E47FB /* Heart Rate and Map Demo WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		708144A21F0FDE78004E47FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Shane Ragusa";
+				TargetAttributes = {
+					708144A91F0FDE79004E47FB = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 59PPGDL29B;
+						ProvisioningStyle = Automatic;
+					};
+					708144BB1F0FDE79004E47FB = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 59PPGDL29B;
+						ProvisioningStyle = Automatic;
+					};
+					708144CA1F0FDE79004E47FB = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 59PPGDL29B;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 708144A51F0FDE78004E47FB /* Build configuration list for PBXProject "Heart Rate and Map Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 708144A11F0FDE78004E47FB;
+			productRefGroup = 708144AB1F0FDE79004E47FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				708144A91F0FDE79004E47FB /* Heart Rate and Map Demo */,
+				708144BB1F0FDE79004E47FB /* Heart Rate and Map Demo WatchKit App */,
+				708144CA1F0FDE79004E47FB /* Heart Rate and Map Demo WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		708144A81F0FDE79004E47FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				708144B81F0FDE79004E47FB /* LaunchScreen.storyboard in Resources */,
+				708144B51F0FDE79004E47FB /* Assets.xcassets in Resources */,
+				708144B31F0FDE79004E47FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		708144BA1F0FDE79004E47FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				708144C51F0FDE79004E47FB /* Assets.xcassets in Resources */,
+				708144C31F0FDE79004E47FB /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		708144C91F0FDE79004E47FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				708144D91F0FDE79004E47FB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		708144A61F0FDE79004E47FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				708144B01F0FDE79004E47FB /* ViewController.swift in Sources */,
+				708144AE1F0FDE79004E47FB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		708144C71F0FDE79004E47FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				708144D71F0FDE79004E47FB /* NotificationController.swift in Sources */,
+				708144D51F0FDE79004E47FB /* ExtensionDelegate.swift in Sources */,
+				708144D31F0FDE79004E47FB /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		708144BF1F0FDE79004E47FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 708144BB1F0FDE79004E47FB /* Heart Rate and Map Demo WatchKit App */;
+			targetProxy = 708144BE1F0FDE79004E47FB /* PBXContainerItemProxy */;
+		};
+		708144CE1F0FDE79004E47FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 708144CA1F0FDE79004E47FB /* Heart Rate and Map Demo WatchKit Extension */;
+			targetProxy = 708144CD1F0FDE79004E47FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		708144B11F0FDE79004E47FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				708144B21F0FDE79004E47FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		708144B61F0FDE79004E47FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				708144B71F0FDE79004E47FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		708144C11F0FDE79004E47FB /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				708144C21F0FDE79004E47FB /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		708144DB1F0FDE79004E47FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		708144DC1F0FDE79004E47FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		708144DE1F0FDE79004E47FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 59PPGDL29B;
+				INFOPLIST_FILE = "Heart Rate and Map Demo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ragusa.Heart-Rate-and-Map-Demo.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		708144DF1F0FDE79004E47FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 59PPGDL29B;
+				INFOPLIST_FILE = "Heart Rate and Map Demo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ragusa.Heart-Rate-and-Map-Demo.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		708144E21F0FDE79004E47FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 59PPGDL29B;
+				IBSC_MODULE = Heart_Rate_and_Map_Demo_WatchKit_Extension;
+				INFOPLIST_FILE = "Heart Rate and Map Demo WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ragusa.Heart-Rate-and-Map-Demo.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		708144E31F0FDE79004E47FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 59PPGDL29B;
+				IBSC_MODULE = Heart_Rate_and_Map_Demo_WatchKit_Extension;
+				INFOPLIST_FILE = "Heart Rate and Map Demo WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ragusa.Heart-Rate-and-Map-Demo.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		708144E61F0FDE79004E47FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 59PPGDL29B;
+				INFOPLIST_FILE = "Heart Rate and Map Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ragusa.Heart-Rate-and-Map-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		708144E71F0FDE79004E47FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 59PPGDL29B;
+				INFOPLIST_FILE = "Heart Rate and Map Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ragusa.Heart-Rate-and-Map-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		708144A51F0FDE78004E47FB /* Build configuration list for PBXProject "Heart Rate and Map Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				708144DB1F0FDE79004E47FB /* Debug */,
+				708144DC1F0FDE79004E47FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		708144DD1F0FDE79004E47FB /* Build configuration list for PBXNativeTarget "Heart Rate and Map Demo WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				708144DE1F0FDE79004E47FB /* Debug */,
+				708144DF1F0FDE79004E47FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		708144E11F0FDE79004E47FB /* Build configuration list for PBXNativeTarget "Heart Rate and Map Demo WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				708144E21F0FDE79004E47FB /* Debug */,
+				708144E31F0FDE79004E47FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		708144E51F0FDE79004E47FB /* Build configuration list for PBXNativeTarget "Heart Rate and Map Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				708144E61F0FDE79004E47FB /* Debug */,
+				708144E71F0FDE79004E47FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 708144A21F0FDE78004E47FB /* Project object */;
+}
