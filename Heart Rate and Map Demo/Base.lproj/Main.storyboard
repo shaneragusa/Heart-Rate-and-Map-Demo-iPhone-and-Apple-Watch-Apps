@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Heart_Rate_and_Map_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,78 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="satellite" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsBuildings="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vy5-qb-MgZ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="518"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfP-3w-rl0">
+                                <rect key="frame" x="0.0" y="586" width="375" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="Ej2-uk-69H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oiz-PI-vqv">
+                                <rect key="frame" x="0.0" y="557" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Heart rate:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSI-sB-Yel">
+                                <rect key="frame" x="0.0" y="615" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7X-Hi-BEi">
+                                <rect key="frame" x="287" y="629" width="72" height="30"/>
+                                <state key="normal" title="Reset Pins"/>
+                                <connections>
+                                    <action selector="resetPins:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r8R-3W-ZXB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUY-Nn-5gn">
+                                <rect key="frame" x="16" y="629" width="50" height="30"/>
+                                <state key="normal" title="Trigger"/>
+                                <connections>
+                                    <action selector="triggerNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AYS-a5-kZw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vy5-qb-MgZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0l6-cm-aNC"/>
+                            <constraint firstItem="vy5-qb-MgZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ADZ-Xj-odo"/>
+                            <constraint firstItem="T7X-Hi-BEi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="271" id="B9L-7V-sCN"/>
+                            <constraint firstItem="T7X-Hi-BEi" firstAttribute="top" secondItem="cSI-sB-Yel" secondAttribute="bottom" constant="-7" id="E8E-4v-4Vg"/>
+                            <constraint firstItem="zfP-3w-rl0" firstAttribute="top" secondItem="Oiz-PI-vqv" secondAttribute="bottom" constant="8" symbolic="YES" id="GZP-ij-XoK"/>
+                            <constraint firstItem="cSI-sB-Yel" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LtK-vP-NOL"/>
+                            <constraint firstItem="vy5-qb-MgZ" firstAttribute="centerX" secondItem="zfP-3w-rl0" secondAttribute="centerX" id="MdP-HY-Ljn"/>
+                            <constraint firstItem="cSI-sB-Yel" firstAttribute="centerX" secondItem="zfP-3w-rl0" secondAttribute="centerX" id="Po5-lF-NMW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vy5-qb-MgZ" secondAttribute="bottom" constant="129" id="SD2-sM-Lhx"/>
+                            <constraint firstItem="vy5-qb-MgZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Top-N6-qoJ"/>
+                            <constraint firstItem="QUY-Nn-5gn" firstAttribute="top" secondItem="cSI-sB-Yel" secondAttribute="bottom" constant="-7" id="U8V-4S-o75"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QUY-Nn-5gn" secondAttribute="trailing" constant="293" id="WxJ-hS-ghc"/>
+                            <constraint firstItem="cSI-sB-Yel" firstAttribute="top" secondItem="zfP-3w-rl0" secondAttribute="bottom" constant="8" symbolic="YES" id="bTR-TZ-iSB"/>
+                            <constraint firstItem="vy5-qb-MgZ" firstAttribute="centerX" secondItem="Oiz-PI-vqv" secondAttribute="centerX" id="dvz-7G-jf0"/>
+                            <constraint firstItem="zfP-3w-rl0" firstAttribute="leading" secondItem="Oiz-PI-vqv" secondAttribute="leading" id="nYC-XI-TvE"/>
+                            <constraint firstItem="Oiz-PI-vqv" firstAttribute="top" secondItem="vy5-qb-MgZ" secondAttribute="bottom" constant="19" id="yCp-gF-zwa"/>
+                        </constraints>
                     </view>
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="heartRateLabel" destination="cSI-sB-Yel" id="K7t-Kj-eYy"/>
+                        <outlet property="latitudeLabel" destination="Oiz-PI-vqv" id="eeJ-I2-OVb"/>
+                        <outlet property="longitudeLabel" destination="zfP-3w-rl0" id="oK4-Z9-9VA"/>
+                        <outlet property="map" destination="vy5-qb-MgZ" id="uvN-G2-3Jb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="126.38680659670166"/>
         </scene>
     </scenes>
 </document>

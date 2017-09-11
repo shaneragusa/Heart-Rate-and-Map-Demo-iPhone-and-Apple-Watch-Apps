@@ -30,6 +30,18 @@
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
 	</dict>
+	<key>NSHealthShareUsageDescription</key>
+	<string>No HealthKit data will be shared.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Heart rate data will be read from the Apple Watch</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Location services will be used to determine your location.</string>
+	<key>UIBackgroundModes</key>
+	<array/>
+	<key>WKBackgroundModes</key>
+	<array>
+		<string>workout-processing</string>
+	</array>
 	<key>WKExtensionDelegateClassName</key>
 	<string>$(PRODUCT_MODULE_NAME).ExtensionDelegate</string>
 </dict>
